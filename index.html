@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Galaxy War - Auto Fire</title>
+</head>
+<body>
+
+    <div class="game-wrapper">
+        <div class="score-board">
+            <div class="stats">
+                <div>SCORE: <span id="score">0</span></div>
+                <div>HIGH: <span id="highScore">0</span></div>
+            </div>
+            <div class="lives-container">LIVES: <span id="lives">3</span></div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="gameCanvas" width="360" height="500"></canvas>
+            
+            <div id="startScreen" class="overlay">
+                <h1>GALAXY WAR</h1>
+                <p>WASD to Move</p>
+                <p>Ship Fires Automatically!</p>
+                <button id="startBtn">LAUNCH SHIP</button>
+            </div>
+
+            <div id="gameOverScreen" class="overlay hidden">
+                <h1 style="color: red;">MISSION FAILED</h1>
+                <p>FINAL SCORE: <span id="finalScore">0</span></p>
+                <button id="restartBtn">RETRY</button>
+            </div>
+        </div>
+
+        <div class="mobile-controls">
+            <div class="d-pad">
+                <button class="ctrl-btn" id="upBtn">▲</button>
+                <div class="mid-ctrl">
+                    <button class="ctrl-btn" id="leftBtn">◀</button>
+                    <button class="ctrl-btn" id="rightBtn">▶</button>
+                </div>
+                <button class="ctrl-btn" id="downBtn">▼</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
